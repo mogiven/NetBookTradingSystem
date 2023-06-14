@@ -1,0 +1,485 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{258500D5-0CDA-41AD-A33B-A2408A63349E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookTradingSystem</RootNamespace>
+    <AssemblyName>BookTradingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44330</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookInfoDetails.aspx" />
+    <Content Include="lib\.DS_Store" />
+    <Content Include="lib\font-awesome\.gitignore" />
+    <Content Include="lib\font-awesome\docs\assets\font\fontawesome-webfont.eot" />
+    <Content Include="lib\font-awesome\docs\assets\font\fontawesome-webfont.ttf" />
+    <Content Include="lib\font-awesome\docs\assets\font\fontawesome-webfont.woff" />
+    <Content Include="lib\font-awesome\docs\assets\font\museo_slab_300-webfont.eot" />
+    <Content Include="lib\font-awesome\docs\assets\font\museo_slab_300-webfont.ttf" />
+    <Content Include="lib\font-awesome\docs\assets\font\museo_slab_500-webfont.eot" />
+    <Content Include="lib\font-awesome\docs\assets\font\museo_slab_500-webfont.ttf" />
+    <Content Include="lib\font-awesome\docs\assets\font\proximanova-webfont.eot" />
+    <Content Include="lib\font-awesome\docs\assets\font\proximanova-webfont.ttf" />
+    <Content Include="lib\font-awesome\docs\assets\less\font-awesome-ie7.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\font-awesome.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\font-site.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\mixins.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\site.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\accordion.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\alerts.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\bootstrap.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\breadcrumbs.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\button-groups.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\buttons.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\carousel.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\close.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\code.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\component-animations.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\dropdowns.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\forms.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\grid.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\hero-unit.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\labels-badges.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\layouts.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\mixins.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\modals.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\navbar.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\navs.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\pager.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\pagination.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\popovers.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\progress-bars.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\reset.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\responsive-1200px-min.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\responsive-767px-max.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\responsive-768px-979px.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\responsive-navbar.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\responsive-utilities.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\responsive.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\scaffolding.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\sprites.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\tables.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\thumbnails.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\tooltip.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\type.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\utilities.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\variables.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\twbs-203\wells.less" />
+    <Content Include="lib\font-awesome\docs\assets\less\variables.less" />
+    <Content Include="lib\font-awesome\FontAwesome-Vectors.pdf" />
+    <Content Include="lib\font-awesome\FontAwesome.ttf" />
+    <Content Include="lib\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="lib\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="lib\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="lib\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="lib\font-awesome\less\font-awesome.less" />
+    <Content Include="lib\font-awesome\README.md" />
+    <Content Include="lib\font-awesome\sass\font-awesome.sass" />
+    <Content Include="lib\font-awesome\sass\font-awesome.scss" />
+    <Content Include="lib\lib\.DS_Store" />
+    <Content Include="lib\lib\font-awesome\.gitignore" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.eot" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.ttf" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.woff" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.eot" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.ttf" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.eot" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.ttf" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\proximanova-webfont.eot" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\proximanova-webfont.ttf" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\font-awesome-ie7.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\font-awesome.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\font-site.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\mixins.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\site.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\accordion.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\alerts.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\bootstrap.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\breadcrumbs.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\button-groups.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\buttons.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\carousel.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\close.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\code.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\component-animations.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\dropdowns.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\forms.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\grid.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\hero-unit.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\labels-badges.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\layouts.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\mixins.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\modals.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\navbar.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\navs.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\pager.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\pagination.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\popovers.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\progress-bars.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\reset.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-1200px-min.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-767px-max.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-768px-979px.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-navbar.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-utilities.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\responsive.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\scaffolding.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\sprites.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\tables.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\thumbnails.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\tooltip.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\type.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\utilities.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\variables.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\twbs-203\wells.less" />
+    <Content Include="lib\lib\font-awesome\docs\assets\less\variables.less" />
+    <Content Include="lib\lib\font-awesome\FontAwesome-Vectors.pdf" />
+    <Content Include="lib\lib\font-awesome\FontAwesome.ttf" />
+    <Content Include="lib\lib\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="lib\lib\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="lib\lib\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="lib\lib\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="lib\lib\font-awesome\less\font-awesome.less" />
+    <Content Include="lib\lib\font-awesome\README.md" />
+    <Content Include="lib\lib\font-awesome\sass\font-awesome.sass" />
+    <Content Include="lib\lib\font-awesome\sass\font-awesome.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\140x140.gif" />
+    <Content Include="images\170x170.gif" />
+    <Content Include="images\background.png" />
+    <Content Include="images\black-Linen.png" />
+    <Content Include="images\blue-paper.png" />
+    <Content Include="images\extra_clean_paper.png" />
+    <Content Include="images\furley_bg.png" />
+    <Content Include="images\subtle_surface.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="lib\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="lib\font-awesome\css\font-awesome.css" />
+    <Content Include="lib\font-awesome\docs\assets\css\font-awesome-ie7.css" />
+    <Content Include="lib\font-awesome\docs\assets\css\font-awesome.css" />
+    <Content Include="lib\font-awesome\docs\assets\css\prettify.css" />
+    <Content Include="lib\font-awesome\docs\assets\css\site.css" />
+    <Content Include="lib\font-awesome\docs\assets\font\fontawesome-webfont.svg" />
+    <Content Include="lib\font-awesome\docs\assets\ico\favicon.ico" />
+    <Content Include="lib\font-awesome\docs\assets\js\backbone.min.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\index\index.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\prettify.min.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-alert.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-button.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-carousel.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-collapse.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-dropdown.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-modal.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-popover.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-scrollspy.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tab.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tooltip.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-transition.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-typeahead.js" />
+    <Content Include="lib\font-awesome\docs\assets\js\underscore.min.js" />
+    <Content Include="lib\font-awesome\docs\index.html" />
+    <Content Include="lib\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="lib\fullcalendar-1.5.3\changelog.txt" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\agenda-views.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\basic-views.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\cupertino\theme.css" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\default.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\external-dragging.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\gcal.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\json-events.php" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\json.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\selectable.html" />
+    <Content Include="lib\fullcalendar-1.5.3\demos\theme.html" />
+    <Content Include="lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.css" />
+    <Content Include="lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.js" />
+    <Content Include="lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.min.js" />
+    <Content Include="lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.print.css" />
+    <Content Include="lib\fullcalendar-1.5.3\fullcalendar\gcal.js" />
+    <Content Include="lib\fullcalendar-1.5.3\GPL-LICENSE.txt" />
+    <Content Include="lib\fullcalendar-1.5.3\jquery\jquery-1.7.1.min.js" />
+    <Content Include="lib\fullcalendar-1.5.3\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="lib\fullcalendar-1.5.3\MIT-LICENSE.txt" />
+    <Content Include="lib\jquery-1.7.2.min.js" />
+    <Content Include="lib\jquery-1.8.1.min.js" />
+    <Content Include="lib\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\lib\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="lib\lib\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="lib\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\lib\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="lib\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="lib\lib\font-awesome\docs\assets\css\font-awesome-ie7.css" />
+    <Content Include="lib\lib\font-awesome\docs\assets\css\font-awesome.css" />
+    <Content Include="lib\lib\font-awesome\docs\assets\css\prettify.css" />
+    <Content Include="lib\lib\font-awesome\docs\assets\css\site.css" />
+    <Content Include="lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.svg" />
+    <Content Include="lib\lib\font-awesome\docs\assets\ico\favicon.ico" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\backbone.min.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\index\index.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\prettify.min.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-alert.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-button.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-carousel.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-collapse.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-dropdown.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-modal.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-popover.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-scrollspy.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tab.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tooltip.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-transition.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-typeahead.js" />
+    <Content Include="lib\lib\font-awesome\docs\assets\js\underscore.min.js" />
+    <Content Include="lib\lib\font-awesome\docs\index.html" />
+    <Content Include="lib\lib\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\changelog.txt" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\agenda-views.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\basic-views.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\cupertino\theme.css" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\default.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\external-dragging.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\gcal.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\json-events.php" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\json.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\selectable.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\demos\theme.html" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.css" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.js" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.min.js" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.print.css" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\fullcalendar\gcal.js" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\GPL-LICENSE.txt" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\jquery\jquery-1.7.1.min.js" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="lib\lib\fullcalendar-1.5.3\MIT-LICENSE.txt" />
+    <Content Include="lib\lib\jquery-1.7.2.min.js" />
+    <Content Include="lib\lib\jquery-1.8.1.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MyAccount.aspx" />
+    <Content Include="MyBookInfo.aspx" />
+    <Content Include="MyPurchase.aspx" />
+    <Content Include="MySale.aspx" />
+    <Content Include="Purchase.aspx" />
+    <Content Include="Sale.aspx" />
+    <Content Include="stylesheets\elements.css" />
+    <Content Include="stylesheets\theme.css" />
+    <Content Include="UserMgr.aspx" />
+    <Content Include="UserReg.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookInfoDetails.aspx.cs">
+      <DependentUpon>BookInfoDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookInfoDetails.aspx.designer.cs">
+      <DependentUpon>BookInfoDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DalBookInfo.cs" />
+    <Compile Include="DAL\DalMessage.cs" />
+    <Compile Include="DAL\DalUser.cs" />
+    <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BookInfo.cs" />
+    <Compile Include="Model\BookInfoTransactionType.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserIdentityRole.cs" />
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyBookInfo.aspx.cs">
+      <DependentUpon>MyBookInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyBookInfo.aspx.designer.cs">
+      <DependentUpon>MyBookInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyPurchase.aspx.cs">
+      <DependentUpon>MyPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyPurchase.aspx.designer.cs">
+      <DependentUpon>MyPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MySale.aspx.cs">
+      <DependentUpon>MySale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MySale.aspx.designer.cs">
+      <DependentUpon>MySale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.aspx.cs">
+      <DependentUpon>Purchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase.aspx.designer.cs">
+      <DependentUpon>Purchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.aspx.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sale.aspx.designer.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMgr.aspx.cs">
+      <DependentUpon>UserMgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMgr.aspx.designer.cs">
+      <DependentUpon>UserMgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReg.aspx.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReg.aspx.designer.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55824</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44330/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

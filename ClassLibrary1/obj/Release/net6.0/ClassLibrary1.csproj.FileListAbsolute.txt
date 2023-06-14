@@ -1,0 +1,12 @@
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\bin\Release\net6.0\ClassLibrary1.deps.json
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\bin\Release\net6.0\ClassLibrary1.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\bin\Release\net6.0\ClassLibrary1.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.csproj.AssemblyReference.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.AssemblyInfoInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.AssemblyInfo.cs
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\refint\ClassLibrary1.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ClassLibrary1.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\ClassLibrary1\obj\Release\net6.0\ref\ClassLibrary1.dll

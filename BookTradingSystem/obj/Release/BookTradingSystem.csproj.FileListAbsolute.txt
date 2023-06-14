@@ -1,0 +1,20 @@
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll.config
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.pdb
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.CoreCompileInputs.cache
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.dll
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.pdb
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll.config
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.pdb
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.AssemblyReference.cache
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.dll
+C:\Users\Malin\Desktop\新建文件夹 (5)\2022_07_01_18_02 做三套平台\4\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll.config
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.AssemblyReference.cache

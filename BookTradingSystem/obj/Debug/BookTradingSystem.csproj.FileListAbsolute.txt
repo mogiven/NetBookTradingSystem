@@ -1,0 +1,7 @@
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll.config
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\bin\BookTradingSystem.pdb
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.CoreCompileInputs.cache
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.dll
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.pdb
+G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.AssemblyReference.cache
