@@ -96,7 +96,7 @@ namespace BookTradingSystem.DAL
             return data_list;
         }
         /// <summary>
-        /// 获取表中所有数据
+        /// 根据用户 id 获取表中所有数据
         /// </summary>
         /// <returns></returns>
         public static List<BookInfo> GetDataList(int user_id)
