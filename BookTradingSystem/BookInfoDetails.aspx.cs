@@ -32,11 +32,18 @@ namespace BookTradingSystem
             User user = (User)obj;
             m_UserName = user.UserName;
 
+            string message = Request.QueryString["message"] ?? "";
+            if (message == "reportSuccess")
+            {
+                // 这里你可以改成你想要的消息显示方式，比如JavaScript弹窗、显示在某个特定的标签中等
+                Response.Write("<script>alert('举报成功！');</script>");
+            }
             if (user.IdentityRole == (int)UserIdentityRole.Manager)
             {
                 m_ManagerMenu += $"<a href = \"#accounts-mgr-menu\" class=\"nav-header\" data-toggle=\"collapse\"><i class=\"icon-briefcase\"></i>管理员功能</a>";
                 m_ManagerMenu += $"<ul id = \"accounts-mgr-menu\" class=\"nav nav-list collapse in\">";
                 m_ManagerMenu += $"<li><a href = \"UserMgr.aspx\" > 所有账号 </a></li>";
+                m_ManagerMenu += $"<li><a href = \"SysReport.aspx\" > 处理举报 </a></li>";
                 m_ManagerMenu += $"</ul>";
             }
 
@@ -185,6 +192,7 @@ namespace BookTradingSystem
                     FollowButton.CssClass = "btn btn-primary pull-right";
                     FollowButton.Enabled = true;
                 }
+                Response.Redirect($"BookInfoDetails.aspx?id={m_DataId}");
                 return;
             }
 
@@ -208,6 +216,28 @@ namespace BookTradingSystem
                 // Error occurred while adding the star
                 // Handle the error or show an error message
             }
+            Response.Redirect($"BookInfoDetails.aspx?id={m_DataId}");
+        }
+
+        protected void ReportButton_Click(object sender, EventArgs e)
+        {
+            object obj = Session["user"];
+            if (obj == null || (!(obj is User)))
+            {
+                Response.Redirect("~/login.aspx");
+                return;
+            }
+            User user = (User)obj;
+
+
+            DalReport.Insert(new Report()
+            {
+                BookInfoId=m_DataId,
+                ReporterId=user.UserId,
+                ReportContent = reportContent.Value,
+                ServerDate = DateTime.Now,
+            });
+            Response.Redirect($"BookInfoDetails.aspx?id={m_DataId}&message=reportSuccess");
         }
 
 

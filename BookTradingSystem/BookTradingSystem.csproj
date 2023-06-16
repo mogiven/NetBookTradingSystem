@@ -360,6 +360,7 @@
     <Content Include="Sale.aspx" />
     <Content Include="stylesheets\elements.css" />
     <Content Include="stylesheets\theme.css" />
+    <Content Include="SysReport.aspx" />
     <Content Include="UserMgr.aspx" />
     <Content Include="UserReg.aspx" />
     <Content Include="Web.config" />
@@ -377,6 +378,7 @@
     </Compile>
     <Compile Include="DAL\DalBookInfo.cs" />
     <Compile Include="DAL\DalMessage.cs" />
+    <Compile Include="DAL\DalReport.cs" />
     <Compile Include="DAL\DalStar.cs" />
     <Compile Include="DAL\DalUser.cs" />
     <Compile Include="DAL\DBHelper.cs" />
@@ -399,6 +401,7 @@
     <Compile Include="Model\Message.cs" />
     <Compile Include="Model\News.cs" />
     <Compile Include="Model\Report.cs" />
+    <Compile Include="Model\ReportView.cs" />
     <Compile Include="Model\Star.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\UserIdentityRole.cs" />
@@ -451,6 +454,13 @@
     </Compile>
     <Compile Include="Sale.aspx.designer.cs">
       <DependentUpon>Sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysReport.aspx.cs">
+      <DependentUpon>SysReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysReport.aspx.designer.cs">
+      <DependentUpon>SysReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserMgr.aspx.cs">
       <DependentUpon>UserMgr.aspx</DependentUpon>

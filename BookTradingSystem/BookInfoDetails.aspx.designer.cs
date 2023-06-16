@@ -33,6 +33,33 @@ namespace BookTradingSystem
         protected global::System.Web.UI.HtmlControls.HtmlInputText MessageContent;
 
         /// <summary>
+        /// reportContent 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea reportContent;
+
+        /// <summary>
+        /// SubmitReportButton 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SubmitReportButton;
+
+        /// <summary>
+        /// ReportButton 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ReportButton;
+
+        /// <summary>
         /// FollowButton 控件。
         /// </summary>
         /// <remarks>

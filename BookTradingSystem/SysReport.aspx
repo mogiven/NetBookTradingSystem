@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BookInfoDetails.aspx.cs" Inherits="BookTradingSystem.BookInfoDetails" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SysReport.aspx.cs" Inherits="BookTradingSystem.SysReport" %>
 
 <!DOCTYPE html>
 
@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
 
     <script src="lib/jquery-1.7.2.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-pzjw8DE/3G82XYB1s3fg5+995vzlZy0qIdk8qB49KX9B1SdXg1d6t/j2O5JvW9+" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8DE/3G82XYB1s3fg5+995vzlZy0qIdk8qB49KX9B1SdXg1d6t/j2O5JvW9+" crossorigin="anonymous"></script>
 
     <!-- Demo page code -->
 
@@ -94,7 +92,7 @@
         </ul>
         <a href="#bookinfo-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>我的发布</a>
         <ul id="bookinfo-menu" class="nav nav-list collapse in">
-            <li><a href="MySale.aspx">我的出售</a></li>
+            <li class="active"><a href="MySale.aspx">我的出售</a></li>
             <li><a href="MyPurchase.aspx">我的求购</a></li>
             <li><a href="MyBookInfo.aspx">发布信息</a></li>
             <li><a href="MyStar.aspx">我的收藏</a></li>
@@ -105,53 +103,37 @@
         </ul>
         <%=m_ManagerMenu %>
     </div>
-
-
+      
     <div class="content">
         <div class="header">
             <div class="stats">
             </div>
-            <h1 class="page-title">信息详情</h1>
+            <h1 class="page-title">举报</h1>
         </div>
         <ul class="breadcrumb">
-            <li><a href="index.aspx">交易平台</a> <span class="divider">/</span></li>
-            <li class="active">信息详情</li>
+            <li><a href="index.aspx">管理员</a> <span class="divider">/</span></li>
+            <li class="active">处理举报</li>
         </ul>
         <div class="container-fluid">
             <div class="row-fluid">
                     
-    <%=m_PageData %>
-                    <form runat="server">
-                    <label>留言标题</label>
-                    <input id="MessageTitle" type="text" class="span12" runat="server">
-                    <label>留言内容</label>
-                    <input id="MessageContent" type="text" class="span12" runat="server">
 
-                        <!-- 在页面上添加一个隐藏的模态框 -->
-                        <div id="reportModal" class="modal fade" tabindex="-1" role="dialog">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <div class="modal-title">填写举报内容</div>
-                                        <button type="button" class="close m-0" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <textarea id="reportContent" class="form-control" rows="4" runat="server" style="width:80%"></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                                        <asp:Button ID="SubmitReportButton" runat="server" Text="提交" class="btn btn-primary" OnClick="ReportButton_Click" />
-                                    </div>
-                                </div>
-                            </div>
+    <%=m_TableData %>
+
+<div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">删除确认</h3>
+    </div>
+    <div class="modal-body">
+        <p class="error-text"><i class="icon-warning-sign modal-icon"></i>确定要删除这行数据?</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+        <button class="btn btn-danger" data-dismiss="modal">删除</button>
+    </div>
 </div>
-                    <asp:Button ID="ReportButton" runat="server" Text="举报" class="btn btn-danger" OnClientClick="openReportModal(); return false;" />
-                    <asp:Button ID="FollowButton" runat="server" class="btn btn-primary pull-right" OnClick="FollowButton_Click" OnClientClick="return confirm('确定吗？');" />
-                    <asp:Button ID="btnSave" runat="server" Text="我要留言" class="btn btn-primary pull-right" OnClick="btnSave_Click"/>
-                    <div class="clearfix"></div>
-                </form>
+
                 <footer>
                     <hr>
                     <p>&copy; 2022 <a href="#" target="_blank">校园二手图书交易系统</a></p>
@@ -166,25 +148,12 @@
         $(function() {
             $('.demo-cancel-click').click(function(){return false;});
         });
+        function confirmDelete(url) {
+            if (confirm('你确定要执行此操作吗?')) {
+                window.location.href = url;
+            }
+        }
     </script>
-
-      <!-- JavaScript 代码 -->
-<script>
-    // 打开模态框
-    function openReportModal() {
-        $('#reportModal').modal('show');
-    }
-
-    // 提交举报
-    function submitReport() {
-        var reportContent = $('#reportContent').val();
-        // 进行其他验证，如不能为空验证等
-        // 将报告内容设置到隐藏字段中
-        $('#<%= reportContent.ClientID %>').val(reportContent);
-    // 执行举报按钮的点击事件
-    <%= Page.ClientScript.GetPostBackEventReference(ReportButton, "") %>
-    }
-</script>
     
   </body>
 </html>

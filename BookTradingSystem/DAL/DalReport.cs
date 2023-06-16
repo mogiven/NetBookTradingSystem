@@ -30,11 +30,23 @@ namespace BookTradingSystem.DAL
         {
             string sql = $"SELECT * FROM [dbo].[Report] WHERE [ReportId]={id}";
             var data_reader = DBHelper.ExecuteReader(sql);
-            string book_sql = $"DELETE FROM [dbo].[BookInfo] WHERE [BookInfoId]={data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"))}";
-            DBHelper.ExecuteNonQuery(book_sql);
+            if (data_reader.Read())
+            {
+                int bookInfoId = data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"));
+                string book_sql = $"DELETE FROM [dbo].[BookInfo] WHERE [BookInfoId]={bookInfoId}";
+                int bookResult = DBHelper.ExecuteNonQuery(book_sql);
 
-            string report_sql = $"DELETE FROM [dbo].[Report] WHERE [ReportId]={id}";
-            return DBHelper.ExecuteNonQuery(report_sql);
+                string report_sql = $"DELETE FROM [dbo].[Report] WHERE [ReportId]={id}";
+                int reportResult = DBHelper.ExecuteNonQuery(report_sql);
+
+                return Math.Min(bookResult, reportResult);
+            }
+            else
+            {
+                // 处理数据读取失败的情况
+                // 返回适当的错误代码或抛出异常
+                return -1; // 举报信息不存在，返回错误代码 -1
+            }
         }
 
         /// <summary>
@@ -63,13 +75,23 @@ namespace BookTradingSystem.DAL
 
                 string book_sql = $"SELECT * FROM [dbo].[BookInfo] WHERE [BookInfoId]={data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"))}";
                 var book_reader = DBHelper.ExecuteReader(book_sql);
+                if (book_reader.Read()) // 检查是否有数据
+                {
+                    data.BookInfoSummary = book_reader.GetString(book_reader.GetOrdinal("Summary"));
+                }
+                book_reader.Close(); // 关闭book_reader
 
                 string user_sql = $"SELECT * FROM [dbo].[User] WHERE [UserId]={data_reader.GetInt32(data_reader.GetOrdinal("ReporterId"))}";
                 var user_reader = DBHelper.ExecuteReader(user_sql);
+                if (user_reader.Read()) // 检查是否有数据
+                {
+                    data.ReporterName = user_reader.GetString(user_reader.GetOrdinal("UserName"));
+                }
+                user_reader.Close(); // 关闭user_reader
 
                 data.ReportId = data_reader.GetInt32(data_reader.GetOrdinal("ReportId"));
-                data.BookInfoSummary = book_reader.GetString(book_reader.GetOrdinal("Summary"));
-                data.ReporterName = user_reader.GetString(user_reader.GetOrdinal("UserName"));
+                //data.BookInfoSummary = book_reader.GetString(book_reader.GetOrdinal("Summary"));
+                //data.ReporterName = user_reader.GetString(user_reader.GetOrdinal("UserName"));
                 data.ReportContent = data_reader.GetString(data_reader.GetOrdinal("ReportContent"));
                 data.ServerDate = data_reader.GetDateTime(data_reader.GetOrdinal("ServerDate"));
 
