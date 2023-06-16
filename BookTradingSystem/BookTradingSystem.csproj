@@ -377,6 +377,8 @@
     </Compile>
     <Compile Include="DAL\DalBookInfo.cs" />
     <Compile Include="DAL\DalMessage.cs" />
+    <Compile Include="DAL\DalReport.cs" />
+    <Compile Include="DAL\DalStar.cs" />
     <Compile Include="DAL\DalUser.cs" />
     <Compile Include="DAL\DBHelper.cs" />
     <Compile Include="Index.aspx.cs">
@@ -398,6 +400,7 @@
     <Compile Include="Model\Message.cs" />
     <Compile Include="Model\News.cs" />
     <Compile Include="Model\Report.cs" />
+    <Compile Include="Model\Star.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\UserIdentityRole.cs" />
     <Compile Include="MyAccount.aspx.cs">
