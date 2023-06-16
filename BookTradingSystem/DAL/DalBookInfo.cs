@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+//using ClassLibrary1;
+using LoggingAssembly;
+//using NLog;
 
 using BookTradingSystem.Model;
 
@@ -9,6 +12,8 @@ namespace BookTradingSystem.DAL
 {
     public static class DalBookInfo
     {
+        // 创建Logger实例
+        private static readonly Logger logger = new Logger();
         /// <summary>
         /// 插入一条新数据
         /// </summary>
@@ -16,6 +21,7 @@ namespace BookTradingSystem.DAL
         /// <returns></returns>
         public static int Insert(BookInfo data)
         {
+            logger.Info("用户"+data.UserId+"发布了一则图书信息: "+data.Summary+" 详情: "+data.Contents);
             string sql = $"INSERT INTO [dbo].[BookInfo] ([UserId] ,[Summary] ,[Contents] ,[TransactionType] ,[ServerDate]) VALUES " +
                 $"('{data.UserId}','{data.Summary}','{data.Contents}','{data.TransactionType}','{data.ServerDate}')";
             return DBHelper.ExecuteNonQuery(sql);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using LoggingAssembly;
 
 using BookTradingSystem.Model;
 
@@ -9,6 +10,7 @@ namespace BookTradingSystem.DAL
 {
     public static class DalReport
     {
+        private static readonly Logger logger = new Logger();
         /// <summary>
         /// 插入一条新数据
         /// </summary>
@@ -16,6 +18,7 @@ namespace BookTradingSystem.DAL
         /// <returns></returns>
         public static int Insert(Report data)
         {
+            logger.Info("用户" + data.ReporterId + "发布了一则举报: " + data.ReportId+" 举报内容: "+data.ReportContent);
             string sql = $"INSERT INTO [dbo].[Report] ([BookInfoId] ,[ReporterId] ,[ReportContent] ,[ServerDate]) VALUES " +
                 $"('{data.BookInfoId}','{data.ReporterId}','{data.ReportContent}','{data.ServerDate}')";
             return DBHelper.ExecuteNonQuery(sql);

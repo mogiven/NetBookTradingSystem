@@ -43,7 +43,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.2.0\lib\net46\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -195,6 +199,7 @@
     <Content Include="lib\lib\font-awesome\README.md" />
     <Content Include="lib\lib\font-awesome\sass\font-awesome.sass" />
     <Content Include="lib\lib\font-awesome\sass\font-awesome.scss" />
+    <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -378,6 +383,7 @@
     </Compile>
     <Compile Include="DAL\DalBookInfo.cs" />
     <Compile Include="DAL\DalMessage.cs" />
+    <Compile Include="DAL\DalNews.cs" />
     <Compile Include="DAL\DalReport.cs" />
     <Compile Include="DAL\DalStar.cs" />
     <Compile Include="DAL\DalUser.cs" />
@@ -476,6 +482,12 @@
     <Compile Include="UserReg.aspx.designer.cs">
       <DependentUpon>UserReg.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoggingAssembly\LoggingAssembly.csproj">
+      <Project>{c0f05a68-be3f-4072-915b-d42eaddb4317}</Project>
+      <Name>LoggingAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
