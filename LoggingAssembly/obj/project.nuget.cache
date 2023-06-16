@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z4+qpnAbPm0lIAS5obL53x+B6RF0p2VC/4euOY94CN+up3/w357e/v4ZSpMGYWaMuHK4JhO7NztiP1ClCzhqeQ==",
+  "success": true,
+  "projectFilePath": "E:\\SQLSERVER\\图书交易系统\\源码\\BookTradingSystem\\LoggingAssembly\\LoggingAssembly.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mogiven\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\bin\Release\net6.0\LoggingAssembly.deps.json
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\bin\Release\net6.0\LoggingAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\bin\Release\net6.0\LoggingAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.csproj.AssemblyReference.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.GeneratedMSBuildEditorConfig.editorconfig
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.AssemblyInfoInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.AssemblyInfo.cs
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\refint\LoggingAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\LoggingAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Release\net6.0\ref\LoggingAssembly.dll
