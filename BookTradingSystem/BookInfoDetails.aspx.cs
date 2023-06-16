@@ -131,5 +131,27 @@ namespace BookTradingSystem
             Response.Redirect($"BookInfoDetails.aspx?id={m_DataId}");
             //Response.Write("<script>alert('账号信息更新成功！');window.location.href='Login.aspx';</script>");
         }
+        protected void FollowButton_Click(object sender, EventArgs e)
+        {
+            // 获取当前登录的用户
+            User user = (User)Session["user"];
+            if (user == null)
+            {
+                // 如果用户未登录，重定向到登录页面
+                Response.Redirect("~/login.aspx");
+                return;
+            }
+
+            // 获取书籍的ID
+            int bookId = m_DataId;
+
+            // 将用户和书籍的ID保存到数据库
+            //DalUserFollows.Add(user.UserId, bookId);
+
+            // 更新页面，提示用户已关注
+            //followButton.Text = "已关注";
+        }
+
+
     }
 }

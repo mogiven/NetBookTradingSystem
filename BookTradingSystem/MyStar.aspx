@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MyBookInfo.aspx.cs" Inherits="BookTradingSystem.MyBookInfo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MyStar.aspx.cs" Inherits="BookTradingSystem.MyStar" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8">
-    <title>Bootstrap Admin</title>
+  <meta charset="utf-8">
+    <title></title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -56,7 +56,7 @@
   <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
   <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
   <!--[if (gt IE 9)|!(IE)]><!--> 
-  <body class="" runat="server"> 
+  <body class=""> 
   <!--<![endif]-->
     
     <div class="navbar">
@@ -65,7 +65,8 @@
                     
                     <li id="fat-menu" class="dropdown">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-user"></i> <%=m_UserName %>
+                            <i class="icon-user"></i> >
+                            <%--  --%>
                             <i class="icon-caret-down"></i>
                         </a>
 
@@ -94,61 +95,55 @@
         <ul id="bookinfo-menu" class="nav nav-list collapse in">
             <li><a href="MySale.aspx">我的出售</a></li>
             <li><a href="MyPurchase.aspx">我的求购</a></li>
-            <li class="active"><a href="MyBookInfo.aspx">发布信息</a></li>
-            <li><a href="MyStar.aspx">我的收藏</a></li>
+            <li><a href="MyBookInfo.aspx">发布信息</a></li>
+            <li class="active"><a href="MyStar.aspx">我的收藏</a></li>
         </ul>
         <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>账号管理</a>
         <ul id="accounts-menu" class="nav nav-list collapse in">
             <li><a href="MyAccount.aspx">我的账号</a></li>
         </ul>
-        <%=m_ManagerMenu %>
+        <%--  --%>
     </div>
-    
+      
     <div class="content">
         <div class="header">
             <div class="stats">
             </div>
-            <h1 class="page-title">发布信息</h1>
+            <h1 class="page-title">我的收藏</h1>
         </div>
         <ul class="breadcrumb">
             <li><a href="index.aspx">交易平台</a> <span class="divider">/</span></li>
-            <li class="active">发布信息</li>
+            <li class="active">我的收藏</li>
         </ul>
         <div class="container-fluid">
             <div class="row-fluid">
                     
-<div class="well">
-    <form id="tab" runat="server">
 <div class="btn-toolbar">
-    <asp:Button ID="btnOk" runat="server" Text="发布信息" class="btn btn-primary" OnClick="btnOk_Click"/>
-</div>
-        <label>发布类型</label>
-        <asp:DropDownList ID="TransType" class="input-xlarge" runat="server" Width="410px"></asp:DropDownList>
-        <label>标题摘要</label>
-        <asp:TextBox ID="Summary" class="input-xlarge" runat="server"  Width="400px"></asp:TextBox>
-        <label>发布内容</label>
-        <textarea id="Contents" cols="20" rows="5"  class="input-xlarge" runat="server"  style="width:400px" ></textarea>
-    </form>
+   <%-- <a class="btn btn-primary" href="MyBookInfo.aspx?action=s"><i class="icon-plus"></i>发布新信息</a>--%>
+  <div class="btn-group">
+  </div>
 </div>
 
+    <%--  --%>
+
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Delete Confirmation</h3>
-  </div>
-  <div class="modal-body">
-    
-    <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-    <button class="btn btn-danger" data-dismiss="modal">Delete</button>
-  </div>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">删除确认</h3>
+    </div>
+    <div class="modal-body">
+        <p class="error-text"><i class="icon-warning-sign modal-icon"></i>确定要删除这行数据?</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+        <button class="btn btn-danger" data-dismiss="modal">删除</button>
+    </div>
 </div>
-                    <footer>
-                        <hr>
-                        <p>&copy; 2022 <a href="#" target="_blank">校园二手图书交易系统</a></p>
-                    </footer>
+
+                <footer>
+                    <hr>
+                    <p>&copy; 2022 <a href="#" target="_blank">校园二手图书交易系统</a></p>
+                </footer>                
             </div>
         </div>
     </div>
@@ -156,11 +151,10 @@
     <script src="lib/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
         $("[rel=tooltip]").tooltip();
-        $(function() {
-            $('.demo-cancel-click').click(function(){return false;});
+        $(function () {
+            $('.demo-cancel-click').click(function () { return false; });
         });
     </script>
     
   </body>
 </html>
-

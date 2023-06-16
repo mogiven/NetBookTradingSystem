@@ -353,6 +353,7 @@
     <Content Include="MyBookInfo.aspx" />
     <Content Include="MyPurchase.aspx" />
     <Content Include="MySale.aspx" />
+    <Content Include="MyStar.aspx" />
     <Content Include="Purchase.aspx" />
     <Content Include="Sale.aspx" />
     <Content Include="stylesheets\elements.css" />
@@ -362,6 +363,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BllBookInfo.cs" />
+    <Compile Include="BLL\BllMessage.cs" />
+    <Compile Include="BLL\BllUser.cs" />
     <Compile Include="BookInfoDetails.aspx.cs">
       <DependentUpon>BookInfoDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -419,6 +423,13 @@
     </Compile>
     <Compile Include="MySale.aspx.designer.cs">
       <DependentUpon>MySale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyStar.aspx.cs">
+      <DependentUpon>MyStar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyStar.aspx.designer.cs">
+      <DependentUpon>MyStar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purchase.aspx.cs">

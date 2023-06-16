@@ -95,6 +95,7 @@
             <li><a href="MySale.aspx">我的出售</a></li>
             <li><a href="MyPurchase.aspx">我的求购</a></li>
             <li><a href="MyBookInfo.aspx">发布信息</a></li>
+            <li><a href="MyStar.aspx">我的收藏</a></li>
         </ul>
         <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>账号管理</a>
         <ul id="accounts-menu" class="nav nav-list collapse in">
@@ -122,6 +123,7 @@
                     <input id="MessageTitle" type="text" class="span12" runat="server">
                     <label>留言内容</label>
                     <input id="MessageContent" type="text" class="span12" runat="server">
+                    <asp:Button ID="FollowButton" runat="server" Text="关注" class="btn btn-primary pull-right"  OnClick="FollowButton_Click" />
                     <asp:Button ID="btnSave" runat="server" Text="我要留言" class="btn btn-primary pull-right" OnClick="btnSave_Click"/>
                     <div class="clearfix"></div>
                 </form>

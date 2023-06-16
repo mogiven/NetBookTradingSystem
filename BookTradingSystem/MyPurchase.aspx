@@ -95,6 +95,7 @@
             <li><a href="MySale.aspx">我的出售</a></li>
             <li class="active"><a href="MyPurchase.aspx">我的求购</a></li>
             <li><a href="MyBookInfo.aspx">发布信息</a></li>
+            <li><a href="MyStar.aspx">我的收藏</a></li>
         </ul>
         <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>账号管理</a>
         <ul id="accounts-menu" class="nav nav-list collapse in">
