@@ -123,7 +123,7 @@
                     <input id="MessageTitle" type="text" class="span12" runat="server">
                     <label>留言内容</label>
                     <input id="MessageContent" type="text" class="span12" runat="server">
-                    <asp:Button ID="FollowButton" runat="server" Text="关注" class="btn btn-primary pull-right"  OnClick="FollowButton_Click" />
+                    <asp:Button ID="FollowButton" runat="server" class="btn btn-primary pull-right" OnClick="FollowButton_Click" OnClientClick="return confirm('确定吗？');" />
                     <asp:Button ID="btnSave" runat="server" Text="我要留言" class="btn btn-primary pull-right" OnClick="btnSave_Click"/>
                     <div class="clearfix"></div>
                 </form>

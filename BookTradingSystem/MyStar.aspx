@@ -66,7 +66,7 @@
                     <li id="fat-menu" class="dropdown">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="icon-user"></i> >
-                            <%--  --%>
+                            <%= m_UserName %>
                             <i class="icon-caret-down"></i>
                         </a>
 
@@ -102,7 +102,7 @@
         <ul id="accounts-menu" class="nav nav-list collapse in">
             <li><a href="MyAccount.aspx">我的账号</a></li>
         </ul>
-        <%--  --%>
+        <%=m_ManagerMenu %>
     </div>
       
     <div class="content">
@@ -124,7 +124,7 @@
   </div>
 </div>
 
-    <%--  --%>
+    <%=m_TableData %>
 
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">

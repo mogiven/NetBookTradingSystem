@@ -100,6 +100,31 @@ namespace BookTradingSystem
                 m_PageData += $"<hr>";
             }
 
+            if (!IsPostBack)
+            {
+                // Check if the user has already starred the book
+                int isStar = DalStar.GetIsStar(new Star()
+                {
+                    UserId = user.UserId,
+                    BookInfoId = m_DataId
+                });
+
+                if (isStar != -1)
+                {
+                    // User has already starred the book
+                    FollowButton.Text = "🤩已收藏";
+                    FollowButton.CssClass = "btn btn-primary pull-right";
+                    FollowButton.Enabled = true;
+                }
+                else
+                {
+                    // User has not starred the book
+                    FollowButton.Text = "😶收藏";
+                    FollowButton.CssClass = "btn btn-primary pull-right";
+                    FollowButton.Enabled = true;
+                }
+            }
+
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
@@ -133,23 +158,56 @@ namespace BookTradingSystem
         }
         protected void FollowButton_Click(object sender, EventArgs e)
         {
-            // 获取当前登录的用户
-            User user = (User)Session["user"];
-            if (user == null)
+            object obj = Session["user"];
+            if (obj == null || (!(obj is User)))
             {
-                // 如果用户未登录，重定向到登录页面
                 Response.Redirect("~/login.aspx");
                 return;
             }
+            User user = (User)obj;
 
-            // 获取书籍的ID
-            int bookId = m_DataId;
+            // Check if the user has already starred the book
+            int isStar = DalStar.GetIsStar(new Star()
+            {
+                UserId = user.UserId,
+                BookInfoId = m_DataId
+            });
 
-            // 将用户和书籍的ID保存到数据库
-            //DalUserFollows.Add(user.UserId, bookId);
+            if (isStar != -1)
+            {
+                Console.WriteLine("删除");
+                int cancel_result = DalStar.Delete(isStar);
+                if(cancel_result != 0)
+                {
+                    // Star added successfully
+                    // Update the button appearance
+                    FollowButton.Text = "😶收藏";
+                    FollowButton.CssClass = "btn btn-primary pull-right";
+                    FollowButton.Enabled = true;
+                }
+                return;
+            }
 
-            // 更新页面，提示用户已关注
-            //followButton.Text = "已关注";
+            // Add the star to the database
+            int result = DalStar.Insert(new Star()
+            {
+                UserId = user.UserId,
+                BookInfoId = m_DataId
+            });
+
+            if (result > 0)
+            {
+                // Star added successfully
+                // Update the button appearance
+                FollowButton.Text = "🤩已收藏";
+                FollowButton.CssClass = "btn btn-primary pull-right";
+                FollowButton.Enabled = true;
+            }
+            else
+            {
+                // Error occurred while adding the star
+                // Handle the error or show an error message
+            }
         }
 
 

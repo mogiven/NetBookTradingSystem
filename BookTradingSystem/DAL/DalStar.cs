@@ -54,14 +54,17 @@ namespace BookTradingSystem.DAL
                 BookInfo data = new BookInfo();
 
                 string book_sql = $"SELECT * FROM [dbo].[BookInfo] WHERE [BookInfoId]={book_info_id}";
-                var data_reader = DBHelper.ExecuteReader(sql);
-                data.BookInfoId = data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"));
-                data.UserId = data_reader.GetInt32(data_reader.GetOrdinal("UserId"));
-                data.Summary = data_reader.GetString(data_reader.GetOrdinal("Summary"));
-                data.Contents = data_reader.GetString(data_reader.GetOrdinal("Contents"));
-                data.TransactionType = data_reader.GetInt32(data_reader.GetOrdinal("TransactionType"));
-                data.ServerDate = data_reader.GetDateTime(data_reader.GetOrdinal("ServerDate"));
-                data_list.Add(data);
+                var data_reader = DBHelper.ExecuteReader(book_sql);
+                if (data_reader.Read()) 
+                {
+                    data.BookInfoId = data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"));
+                    data.UserId = data_reader.GetInt32(data_reader.GetOrdinal("UserId"));
+                    data.Summary = data_reader.GetString(data_reader.GetOrdinal("Summary"));
+                    data.Contents = data_reader.GetString(data_reader.GetOrdinal("Contents"));
+                    data.TransactionType = data_reader.GetInt32(data_reader.GetOrdinal("TransactionType"));
+                    data.ServerDate = data_reader.GetDateTime(data_reader.GetOrdinal("ServerDate"));
+                    data_list.Add(data);
+                }
             }
             return data_list;
         }
