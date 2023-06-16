@@ -25,3 +25,10 @@ C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.CoreCompileInputs.cache
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.dll
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\LoggingAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\NLog.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\LoggingAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\obj\Release\BookTradingSystem.csproj.CopyComplete
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\NLog.xml
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\RecommendationEngineAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\RecommendationEngineAssembly.pdb

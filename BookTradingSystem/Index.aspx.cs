@@ -15,6 +15,7 @@ namespace BookTradingSystem
         protected string m_UserName = string.Empty;
         protected string m_TableData_Sale = string.Empty;
         protected string m_TableData_Purchase = string.Empty;
+        protected string m_TableData_Recommend = string.Empty;
 
         protected string m_UserCount = "0";
         protected string m_SaleCount = "0";
@@ -84,6 +85,35 @@ namespace BookTradingSystem
             }
             m_TableData_Sale += $"</tbody></table>";
             m_TableData_Purchase += $"</tbody></table>";
+
+            // Get the recommended books for the user
+            List<BookInfo> recommendedBooks = DalRecommendation.GetRecommendations(user.UserId);
+
+            // Build the HTML table for recommended books
+            m_TableData_Recommend += "<table class=\"table table-bordered table-striped\">" +
+                "<thead><tr><th width=\"180px\">发布日期</th><th width=\"60px\">供/求</th><th width=\"100px\">发布人</th><th>摘要</th></tr></thead>" +
+                "<tbody>";
+
+            foreach (var book in recommendedBooks)
+            {
+                var u = user_list.Find(n => n.UserId == book.UserId);
+                string userName = (user == null ? "未知用户" : user.UserName);
+                string saleOrPurchase = string.Empty;
+                switch ((BookInfoTransactionType)book.TransactionType)
+                {
+                    case BookInfoTransactionType.Sale:
+                        saleOrPurchase = "出售";
+                        break;
+                    case BookInfoTransactionType.Purchase:
+                        saleOrPurchase = "求购";
+                        break;
+                }
+
+                m_TableData_Recommend += $"<tr><td>{book.ServerDate}</td><td>{saleOrPurchase}</td><td>{userName}</td><td>" +
+                    $"<a href=\"BookInfoDetails.aspx?id={book.BookInfoId}\">{book.Summary}</a></td></tr>";
+            }
+
+            m_TableData_Recommend += "</tbody></table>";
         }
     }
 }

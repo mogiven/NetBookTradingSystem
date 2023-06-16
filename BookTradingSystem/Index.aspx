@@ -157,6 +157,14 @@
     </div>
 </div>
 
+<div class="block">
+   <a href="#tablewidget3" class="block-heading" data-toggle="collapse">推荐书籍<span class="label label-warning">新</span></a>
+    <div id="tablewidget3" class="block-body collapse in">
+        <%=m_TableData_Recommend %>
+    </div>
+   
+</div>
+
 <div class="row-fluid">
     <div class="block span6">
         <a href="#tablewidget" class="block-heading" data-toggle="collapse">出售信息<span class="label label-warning"></span></a>

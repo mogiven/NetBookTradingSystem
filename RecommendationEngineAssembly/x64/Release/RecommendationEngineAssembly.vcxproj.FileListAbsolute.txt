@@ -1,0 +1,1 @@
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\RecommendationEngineAssembly\x64\Release\RecommendationEngineAssembly.vcxproj.AssemblyReference.cache
