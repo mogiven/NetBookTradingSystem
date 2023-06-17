@@ -19,3 +19,9 @@ C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.CopyComplete
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.dll
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\PasswordAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\StrcatAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\StrcmpAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\PasswordAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\StrcatAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\StrcmpAssembly.pdb

@@ -501,6 +501,10 @@
       <Project>{1507d105-f131-4cd4-ab60-00b95290ee1b}</Project>
       <Name>StrcatAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StrcmpAssembly\StrcmpAssembly.csproj">
+      <Project>{89520347-3032-4904-8c93-9d8caf4546b3}</Project>
+      <Name>StrcmpAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using LoggingAssembly;
 using StrcatAssembly;
 //using NLog;
@@ -15,6 +16,10 @@ namespace BookTradingSystem.DAL
 
         //创建Strcat实例
         private static readonly Strcat strcat = new Strcat();
+
+        private static readonly Semaphore UpdateMutex = new Semaphore(1, 1); // 读取信号量
+
+        private static readonly Semaphore DeleteMutex = new Semaphore(1, 1); // 读取信号量
         /// <summary>
         /// 插入一条新数据
         /// </summary>
@@ -35,13 +40,16 @@ namespace BookTradingSystem.DAL
         /// <returns></returns>
         public static int Update(BookInfo data)
         {
+            UpdateMutex.WaitOne();
             string sql =  strcat.polymerization($"UPDATE [dbo].[BookInfo] ",$"SET [UserId] = '{data.UserId}'") +
                 $",[Summary] = '{data.Summary}'" +
                 $",[Contents] = '{data.Contents}'" +
                 $",[TransactionType] = '{data.TransactionType}'" +
                 $",[ServerDate] = '{data.ServerDate}'" +
                 $" WHERE [BookInfoId]={data.BookInfoId}";
-            return DBHelper.ExecuteNonQuery(sql);
+            int res = DBHelper.ExecuteNonQuery(sql);
+            UpdateMutex.Release();
+            return res;
         }
 
         /// <summary>
@@ -51,8 +59,11 @@ namespace BookTradingSystem.DAL
         /// <returns></returns>
         public static int Delete(int id)
         {
+            DeleteMutex.WaitOne();
             string sql = $"DELETE FROM [dbo].[BookInfo] WHERE [BookInfoId]={id}";
-            return DBHelper.ExecuteNonQuery(sql);
+            int res = DBHelper.ExecuteNonQuery(sql);
+            DeleteMutex.Release();
+            return res;
         }
 
         /// <summary>
