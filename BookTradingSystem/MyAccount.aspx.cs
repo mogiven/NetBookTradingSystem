@@ -7,11 +7,14 @@ using System.Web.UI.WebControls;
 
 using BookTradingSystem.DAL;
 using BookTradingSystem.Model;
+using StrcmpAssembly;
 
 namespace BookTradingSystem
 {
     public partial class MyAccount : System.Web.UI.Page
     {
+        private static readonly Strcmp strcmp = new Strcmp();
+
         protected string m_UserName = string.Empty;
         protected string m_MenuLeft = string.Empty;
         protected string m_TableData = string.Empty;
@@ -62,7 +65,7 @@ namespace BookTradingSystem
             { Response.Write("<script>alert('信息不能为空,所有项必须填写！');window.location.href=document.URL;</script>"); return; }
 
             User u = DalUser.GetData(m_DataId);
-            if (u.LoginAccount == "admin")
+            if (strcmp.strcmp(u.LoginAccount, "admin"))
                 if (u.LoginAccount != login_account)
                 { Response.Write("<script>alert('管理员账号不能修改登录账号！');window.location.href='UserMgr.aspx';</script>"); return; }
 

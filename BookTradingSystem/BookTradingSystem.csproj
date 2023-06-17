@@ -489,6 +489,10 @@
       <Project>{c0f05a68-be3f-4072-915b-d42eaddb4317}</Project>
       <Name>LoggingAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PasswordAssembly\PasswordAssembly.csproj">
+      <Project>{2e9465e7-8f2c-4961-87f7-9cdc78160948}</Project>
+      <Name>PasswordAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RecommendationEngineAssembly\RecommendationEngineAssembly.vcxproj">
       <Project>{fb5718a1-257d-401d-b956-7b1d668e8b80}</Project>
       <Name>RecommendationEngineAssembly</Name>

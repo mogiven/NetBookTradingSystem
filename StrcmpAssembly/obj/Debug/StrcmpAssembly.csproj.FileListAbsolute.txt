@@ -1,0 +1,6 @@
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcmpAssembly\bin\Debug\StrcmpAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcmpAssembly\bin\Debug\StrcmpAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcmpAssembly\obj\Debug\StrcmpAssembly.csproj.AssemblyReference.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcmpAssembly\obj\Debug\StrcmpAssembly.csproj.CoreCompileInputs.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcmpAssembly\obj\Debug\StrcmpAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcmpAssembly\obj\Debug\StrcmpAssembly.pdb

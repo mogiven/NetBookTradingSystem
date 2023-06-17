@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 
 using BookTradingSystem.Model;
+using PasswordAssembly;
 
 namespace BookTradingSystem.DAL
 {
     public static class DalUser
     {
+        private static readonly Password password = new Password();
         /// <summary>
         /// 插入一条新数据
         /// </summary>
@@ -16,9 +18,13 @@ namespace BookTradingSystem.DAL
         /// <returns></returns>
         public static int Insert(User data)
         {
-            string sql = $"INSERT INTO [dbo].[User] ([LoginAccount] ,[LoginPassword] ,[UserName] ,[IdentityRole] ,[Email] ,[Phone] ,[RegDate]) VALUES " +
+            if (password.examine(data.LoginPassword)) {
+                string sql = $"INSERT INTO [dbo].[User] ([LoginAccount] ,[LoginPassword] ,[UserName] ,[IdentityRole] ,[Email] ,[Phone] ,[RegDate]) VALUES " +
                 $"('{data.LoginAccount}','{data.LoginPassword}','{data.UserName}',{data.IdentityRole},'{data.Email}','{data.Phone}','{data.RegDate}')";
-            return DBHelper.ExecuteNonQuery(sql);
+                return DBHelper.ExecuteNonQuery(sql);
+            }
+
+            return 0;
         }
 
         /// <summary>
