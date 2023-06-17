@@ -8,23 +8,23 @@
     ".NETFramework,Version=v4.8": []
   },
   "packageFolders": {
-    "C:\\Users\\31294\\.nuget\\packages\\": {},
+    "C:\\Users\\mogiven\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\31294\\Desktop\\高程作业\\.NET体系结构与设计开发\\期末项目\\NetBookTradingSystem\\PasswordAssembly\\PasswordAssembly.csproj",
+      "projectUniqueName": "E:\\SQLSERVER\\图书交易系统\\源码\\BookTradingSystem\\PasswordAssembly\\PasswordAssembly.csproj",
       "projectName": "PasswordAssembly",
-      "projectPath": "C:\\Users\\31294\\Desktop\\高程作业\\.NET体系结构与设计开发\\期末项目\\NetBookTradingSystem\\PasswordAssembly\\PasswordAssembly.csproj",
-      "packagesPath": "C:\\Users\\31294\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\31294\\Desktop\\高程作业\\.NET体系结构与设计开发\\期末项目\\NetBookTradingSystem\\PasswordAssembly\\obj\\",
+      "projectPath": "E:\\SQLSERVER\\图书交易系统\\源码\\BookTradingSystem\\PasswordAssembly\\PasswordAssembly.csproj",
+      "packagesPath": "C:\\Users\\mogiven\\.nuget\\packages\\",
+      "outputPath": "E:\\SQLSERVER\\图书交易系统\\源码\\BookTradingSystem\\PasswordAssembly\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\31294\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mogiven\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

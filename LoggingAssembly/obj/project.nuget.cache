@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "W6qYWnhCoSkgGgsbFFQgABv0tBc8vR0OPry7NOz7mu2sgIGtBMbDwd82EX6K02PE3wg3U5Thdqny4s+n/PWyAQ==",
+  "dgSpecHash": "z4+qpnAbPm0lIAS5obL53x+B6RF0p2VC/4euOY94CN+up3/w357e/v4ZSpMGYWaMuHK4JhO7NztiP1ClCzhqeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\31294\\Desktop\\高程作业\\.NET体系结构与设计开发\\期末项目\\NetBookTradingSystem\\LoggingAssembly\\LoggingAssembly.csproj",
+  "projectFilePath": "E:\\SQLSERVER\\图书交易系统\\源码\\BookTradingSystem\\LoggingAssembly\\LoggingAssembly.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\31294\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512"
+    "C:\\Users\\mogiven\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512"
   ],
   "logs": []
 }

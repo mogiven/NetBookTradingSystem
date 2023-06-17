@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PzH8ApQKtRelHM+Q+axEuo4VN/4WnX8x88gypl/e7U2YOmTWzHu56sLansJ+PjKBOgVqMQkKAhvSz5/DIS2Xvw==",
+  "dgSpecHash": "uzWC7T3WMjc3cbnB7pg1BBa9o1vjnJnlL9sZFv10u1oFT/hrHXDftDsSUrCKDeirle0NTWGcFU/GzPmgsOphLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\31294\\Desktop\\高程作业\\.NET体系结构与设计开发\\期末项目\\NetBookTradingSystem\\StrcatAssembly\\StrcatAssembly.csproj",
+  "projectFilePath": "E:\\SQLSERVER\\图书交易系统\\源码\\BookTradingSystem\\StrcatAssembly\\StrcatAssembly.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

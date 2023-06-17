@@ -1,0 +1,6 @@
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcmpAssembly\bin\Release\StrcmpAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcmpAssembly\bin\Release\StrcmpAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcmpAssembly\obj\Release\StrcmpAssembly.csproj.AssemblyReference.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcmpAssembly\obj\Release\StrcmpAssembly.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcmpAssembly\obj\Release\StrcmpAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcmpAssembly\obj\Release\StrcmpAssembly.pdb

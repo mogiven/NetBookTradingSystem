@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 using BookTradingSystem.DAL;
 using BookTradingSystem.Model;
+using BookTradingSystem.BLL;
 
 namespace BookTradingSystem
 {
@@ -55,17 +56,17 @@ namespace BookTradingSystem
             try { msg_id = int.Parse(msgid); } catch { msg_id = 0; }
             if (m_Action == "del")
             {
-                DalBookInfo.Delete(m_DataId);
+                BllBookInfo.DeleteAsync(m_DataId);
                 Response.Redirect($"BookInfoDetails.aspx?id={m_DataId}");
             }
             else if (m_Action == "delmsg")
             {
-                DalMessage.Delete(msg_id);
+                BllBookInfo.DeleteAsync(msg_id);
                 Response.Redirect($"BookInfoDetails.aspx?id={m_DataId}");
             }
 
             var user_list = DalUser.GetDataList();
-            var book_info_data = DalBookInfo.GetData(m_DataId);
+            var book_info_data = BllBookInfo.GetDataAsync(m_DataId);
             if (book_info_data == null) return;
             var book_info_user = DalUser.GetData(book_info_data.UserId);
             if (book_info_user == null) return;

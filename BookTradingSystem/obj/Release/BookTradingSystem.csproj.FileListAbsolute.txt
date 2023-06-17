@@ -32,3 +32,9 @@ E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\obj\R
 E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\NLog.xml
 E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\RecommendationEngineAssembly.dll
 E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\RecommendationEngineAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\PasswordAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\StrcatAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\StrcmpAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\PasswordAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\StrcatAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\BookTradingSystem\bin\StrcmpAssembly.pdb

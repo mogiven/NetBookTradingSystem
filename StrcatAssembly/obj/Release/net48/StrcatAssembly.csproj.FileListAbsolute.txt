@@ -1,0 +1,9 @@
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\bin\Release\net48\StrcatAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\bin\Release\net48\StrcatAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.csproj.AssemblyReference.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.GeneratedMSBuildEditorConfig.editorconfig
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.AssemblyInfoInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.AssemblyInfo.cs
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Release\net48\StrcatAssembly.pdb

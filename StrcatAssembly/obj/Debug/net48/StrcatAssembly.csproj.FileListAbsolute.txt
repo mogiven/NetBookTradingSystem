@@ -7,3 +7,12 @@ C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.csproj.CoreCompileInputs.cache
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.dll
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\bin\Debug\net48\StrcatAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\bin\Debug\net48\StrcatAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.csproj.AssemblyReference.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.GeneratedMSBuildEditorConfig.editorconfig
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.AssemblyInfoInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.AssemblyInfo.cs
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\StrcatAssembly\obj\Debug\net48\StrcatAssembly.pdb

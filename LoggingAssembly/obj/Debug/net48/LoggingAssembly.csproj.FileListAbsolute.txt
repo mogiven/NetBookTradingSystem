@@ -9,3 +9,14 @@ C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.CopyComplete
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.dll
 C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\bin\Debug\net48\LoggingAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\bin\Debug\net48\LoggingAssembly.pdb
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\bin\Debug\net48\NLog.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.AssemblyReference.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.GeneratedMSBuildEditorConfig.editorconfig
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.AssemblyInfoInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.AssemblyInfo.cs
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.CoreCompileInputs.cache
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.CopyComplete
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.dll
+E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.pdb

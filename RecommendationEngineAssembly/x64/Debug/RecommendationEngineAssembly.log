@@ -1,7 +1,1 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  RecommendationEngineAssembly.cpp
-  正在生成代码...
-  .NETFramework,Version=v4.8.AssemblyAttributes.cpp
-  AssemblyInfo.obj : 遇到了 MSIL 模块；对 MSIL 禁用了增量链接；正在执行完全链接
-  RecommendationEngineAssembly.vcxproj -> C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\x64\Debug\RecommendationEngineAssembly.dll
+﻿  RecommendationEngineAssembly.vcxproj -> E:\SQLSERVER\图书交易系统\源码\BookTradingSystem\x64\Debug\RecommendationEngineAssembly.dll

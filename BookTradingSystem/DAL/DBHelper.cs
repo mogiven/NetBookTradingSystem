@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.OleDb;
+using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace BookTradingSystem.DAL
 {
@@ -79,5 +81,18 @@ namespace BookTradingSystem.DAL
             OleDbCommand oleDbCommand = new OleDbCommand(sql, m_OleDbConnection);
             return oleDbCommand.ExecuteReader();
         }
+        public static Task<int> ExecuteNonQueryAsync(string sql)
+        {
+            return Task.Run(() => ExecuteNonQuery(sql));
+        }
+
+        public static Task<OleDbDataReader> ExecuteReaderAsync(string sql)
+        {
+            return Task.Run(() => ExecuteReader(sql));
+        }
+
+
     }
+
+
 }

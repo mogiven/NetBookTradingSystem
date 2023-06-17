@@ -6,6 +6,7 @@ using StrcatAssembly;
 
 using BookTradingSystem.Model;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace BookTradingSystem.DAL
 {
@@ -135,5 +136,113 @@ namespace BookTradingSystem.DAL
             return data_list;
         }
 
+        /// <summary>
+        /// 插入一条新数据
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static async Task<int> InsertAsync(BookInfo data)
+        {
+            logger.Info("用户" + data.UserId + "发布了一则图书信息: " + data.Summary + " 详情: " + data.Contents);
+            string sql = $"INSERT INTO [dbo].[BookInfo] ([UserId] ,[Summary] ,[Contents] ,[TransactionType] ,[ServerDate]) VALUES " +
+                $"('{data.UserId}','{data.Summary}','{data.Contents}','{data.TransactionType}','{data.ServerDate}')";
+            return await DBHelper.ExecuteNonQueryAsync(sql);
+        }
+
+        /// <summary>
+        /// 按指定 id 更新一条数据
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public static async Task<int> UpdateAsync(BookInfo data)
+        {
+            string sql = strcat.polymerization($"UPDATE [dbo].[BookInfo] ", $"SET [UserId] = '{data.UserId}'") +
+                $",[Summary] = '{data.Summary}'" +
+                $",[Contents] = '{data.Contents}'" +
+                $",[TransactionType] = '{data.TransactionType}'" +
+                $",[ServerDate] = '{data.ServerDate}'" +
+                $" WHERE [BookInfoId]={data.BookInfoId}";
+            return await DBHelper.ExecuteNonQueryAsync(sql);
+        }
+
+        /// <summary>
+        /// 删除指定 id 的特定数据
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static async Task<int> DeleteAsync(int id)
+        {
+            string sql = $"DELETE FROM [dbo].[BookInfo] WHERE [BookInfoId]={id}";
+            return await DBHelper.ExecuteNonQueryAsync(sql);
+        }
+
+        /// <summary>
+        /// 获取指定 id 的特定数据
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static async Task<BookInfo> GetDataAsync(int id)
+        {
+            string sql = $"SELECT * FROM [dbo].[BookInfo] WHERE [BookInfoId]={id}";
+            var data_reader = await DBHelper.ExecuteReaderAsync(sql);
+            if (await data_reader.ReadAsync())
+            {
+                BookInfo data = new BookInfo();
+                data.BookInfoId = data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"));
+                data.UserId = data_reader.GetInt32(data_reader.GetOrdinal("UserId"));
+                data.Summary = data_reader.GetString(data_reader.GetOrdinal("Summary"));
+                data.Contents = data_reader.GetString(data_reader.GetOrdinal("Contents"));
+                data.TransactionType = data_reader.GetInt32(data_reader.GetOrdinal("TransactionType"));
+                data.ServerDate = data_reader.GetDateTime(data_reader.GetOrdinal("ServerDate"));
+                return data;
+            }
+            else
+                return null;
+        }
+
+        /// <summary>
+        /// 获取表中所有数据
+        /// </summary>
+        /// <returns></returns>
+        public static async Task<List<BookInfo>> GetDataListAsync()
+        {
+            string sql = $"SELECT * FROM [dbo].[BookInfo]";
+            var data_reader = await DBHelper.ExecuteReaderAsync(sql);
+            List<BookInfo> data_list = new List<BookInfo>();
+            while (await data_reader.ReadAsync())
+            {
+                BookInfo data = new BookInfo();
+                data.BookInfoId = data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"));
+                data.UserId = data_reader.GetInt32(data_reader.GetOrdinal("UserId"));
+                data.Summary = data_reader.GetString(data_reader.GetOrdinal("Summary"));
+                data.Contents = data_reader.GetString(data_reader.GetOrdinal("Contents"));
+                data.TransactionType = data_reader.GetInt32(data_reader.GetOrdinal("TransactionType"));
+                data.ServerDate = data_reader.GetDateTime(data_reader.GetOrdinal("ServerDate"));
+                data_list.Add(data);
+            }
+            return data_list;
+        }
+        /// <summary>
+        /// 根据用户 id 获取表中所有数据
+        /// </summary>
+        /// <returns></returns>
+        public static async Task<List<BookInfo>> GetDataListAsync(int user_id)
+        {
+            string sql = $"SELECT * FROM [dbo].[BookInfo] WHERE [UserId]={user_id}";
+            var data_reader = await DBHelper.ExecuteReaderAsync(sql);
+            List<BookInfo> data_list = new List<BookInfo>();
+            while (await data_reader.ReadAsync())
+            {
+                BookInfo data = new BookInfo();
+                data.BookInfoId = data_reader.GetInt32(data_reader.GetOrdinal("BookInfoId"));
+                data.UserId = data_reader.GetInt32(data_reader.GetOrdinal("UserId"));
+                data.Summary = data_reader.GetString(data_reader.GetOrdinal("Summary"));
+                data.Contents = data_reader.GetString(data_reader.GetOrdinal("Contents"));
+                data.TransactionType = data_reader.GetInt32(data_reader.GetOrdinal("TransactionType"));
+                data.ServerDate = data_reader.GetDateTime(data_reader.GetOrdinal("ServerDate"));
+                data_list.Add(data);
+            }
+            return data_list;
+        }
     }
 }
