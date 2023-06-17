@@ -1,0 +1,12 @@
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\bin\Debug\net7.0\StrcatAssembly.deps.json
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\bin\Debug\net7.0\StrcatAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\bin\Debug\net7.0\StrcatAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.csproj.AssemblyReference.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.AssemblyInfoInputs.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.AssemblyInfo.cs
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.csproj.CoreCompileInputs.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\refint\StrcatAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\StrcatAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\StrcatAssembly\obj\Debug\net7.0\ref\StrcatAssembly.dll

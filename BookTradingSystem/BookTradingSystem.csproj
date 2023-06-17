@@ -493,6 +493,10 @@
       <Project>{fb5718a1-257d-401d-b956-7b1d668e8b80}</Project>
       <Name>RecommendationEngineAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StrcatAssembly\StrcatAssembly.csproj">
+      <Project>{1507d105-f131-4cd4-ab60-00b95290ee1b}</Project>
+      <Name>StrcatAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

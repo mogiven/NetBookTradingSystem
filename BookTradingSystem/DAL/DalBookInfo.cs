@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-//using ClassLibrary1;
+﻿using System.Collections.Generic;
 using LoggingAssembly;
+using StrcatAssembly;
 //using NLog;
 
 using BookTradingSystem.Model;
+using System.IO;
 
 namespace BookTradingSystem.DAL
 {
@@ -14,6 +12,9 @@ namespace BookTradingSystem.DAL
     {
         // 创建Logger实例
         private static readonly Logger logger = new Logger();
+
+        //创建Strcat实例
+        private static readonly Strcat strcat = new Strcat();
         /// <summary>
         /// 插入一条新数据
         /// </summary>
@@ -34,8 +35,7 @@ namespace BookTradingSystem.DAL
         /// <returns></returns>
         public static int Update(BookInfo data)
         {
-            string sql = $"UPDATE [dbo].[BookInfo] " +
-                $"SET [UserId] = '{data.UserId}'" +
+            string sql =  strcat.polymerization($"UPDATE [dbo].[BookInfo] ",$"SET [UserId] = '{data.UserId}'") +
                 $",[Summary] = '{data.Summary}'" +
                 $",[Contents] = '{data.Contents}'" +
                 $",[TransactionType] = '{data.TransactionType}'" +
