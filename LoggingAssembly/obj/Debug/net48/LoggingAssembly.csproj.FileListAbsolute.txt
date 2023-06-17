@@ -1,0 +1,11 @@
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\bin\Debug\net48\LoggingAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\bin\Debug\net48\LoggingAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\bin\Debug\net48\NLog.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.AssemblyReference.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.AssemblyInfoInputs.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.AssemblyInfo.cs
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.CoreCompileInputs.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.csproj.CopyComplete
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\LoggingAssembly\obj\Debug\net48\LoggingAssembly.pdb

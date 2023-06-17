@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -10,6 +11,7 @@ using BookTradingSystem.Model;
 
 namespace BookTradingSystem
 {
+
     public partial class Index : System.Web.UI.Page
     {
         protected string m_UserName = string.Empty;
@@ -23,6 +25,9 @@ namespace BookTradingSystem
         protected string m_MessageCount = "0";
 
         protected string m_ManagerMenu = string.Empty;
+
+        [DllImport(@"..\..\x64\Debug\MinusDLL.dll", EntryPoint = "minus")]//DLL的位置,放在该解决方案的Debug目录下
+        public static extern int Minus(int a, int b);
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -48,7 +53,7 @@ namespace BookTradingSystem
             m_UserCount = user_list.Count.ToString();
             var bookinfo_list = DalBookInfo.GetDataList();
             m_SaleCount = bookinfo_list.Where(n => n.TransactionType == (int)BookInfoTransactionType.Sale).Count().ToString();
-            m_PurchaseCount = bookinfo_list.Where(n => n.TransactionType == (int)BookInfoTransactionType.Purchase).Count().ToString();
+            m_PurchaseCount = Minus(bookinfo_list.Count(), bookinfo_list.Where(n => n.TransactionType == (int)BookInfoTransactionType.Sale).Count()).ToString();
             var message_list = DalMessage.GetDataList();
             m_MessageCount = message_list.Count.ToString();
 

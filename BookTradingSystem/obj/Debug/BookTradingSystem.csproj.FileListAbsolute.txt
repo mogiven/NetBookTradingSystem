@@ -5,3 +5,17 @@ G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csp
 G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.dll
 G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.pdb
 G:\NetCsharp\BookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.AssemblyReference.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll.config
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\BookTradingSystem.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\BookTradingSystem.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\LoggingAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\NLog.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\RecommendationEngineAssembly.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\RecommendationEngineAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\LoggingAssembly.pdb
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\bin\NLog.xml
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.AssemblyReference.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.csproj.CopyComplete
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.dll
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\BookTradingSystem\obj\Debug\BookTradingSystem.pdb

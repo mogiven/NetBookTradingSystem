@@ -1,0 +1,1 @@
+C:\Users\31294\Desktop\高程作业\.NET体系结构与设计开发\期末项目\NetBookTradingSystem\RecommendationEngineAssembly\x64\Debug\RecommendationEngineAssembly.vcxproj.AssemblyReference.cache

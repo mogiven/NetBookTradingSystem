@@ -11,7 +11,7 @@ namespace BookTradingSystem.DAL
         /// <summary>
         /// 数据库位置. 本机为句点或是localhost. 远程服务器为IP地址或域名. 如果不是默认端口,则使用逗号分隔加在地址后面.
         /// </summary>
-        public static string DataSource { get; set; } = "DESKTOP-LUUIPQ0";
+        public static string DataSource { get; set; } = "100.78.134.88";
         /// <summary>
         /// 要连接的目标数据库
         /// </summary>
